@@ -122,13 +122,13 @@ caps.addEventListener('click', capsAction);
 shift.forEach(elem => elem.addEventListener('mousedown', shiftAction));
 shift.forEach(elem => elem.addEventListener('mouseup', shiftAction));
 
-document.addEventListener('keypress', function(elem) {
-  const keyCollection = document.querySelectorAll('.key');
-  let num = elem.keyCode;
+// document.addEventListener('keypress', function(elem) {
+//   const keyCollection = document.querySelectorAll('.key');
+//   // let num = elem.keyCode;
 
-  keyCollection.forEach(item => {
-      if (+item.dataset.keyCode === +num) {
-        item.click();
-      }
-  })
-})
+//   keyCollection.forEach(item => {
+//       if (+item.dataset.keyCode === +num) {
+//         item.click();
+//       }
+//   })
+// })
